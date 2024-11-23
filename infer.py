@@ -25,7 +25,7 @@ learning_rate = 0.001
 optimizer = optim.Adam(params=model.parameters(), lr=learning_rate)
 
 # Load checkpoint
-checkpoint = torch.load("model.pth")
+checkpoint = torch.load("best_model_checkpoint.pth")
 optimizer.load_state_dict(checkpoint['optimizer'])
 
 # Load params
